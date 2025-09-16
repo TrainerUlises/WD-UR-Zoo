@@ -1,0 +1,101 @@
+/* Overall page setup: fonts, background, and default text color */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: #f7fff0 url("../images/Zoo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Header bar with title and navigation */
+header {
+    background: #35ab49;
+    padding: 35px;
+    text-align: center;
+}
+
+/* Navigation menu layout */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Navigation link styles and hover effect */
+nav a {
+    background: #ffffff;
+    color: #228B22;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+nav a:hover {
+    background: #228B22;
+    color: white;
+}
+
+/* Main content area formatting */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer bar fixed at the bottom */
+footer {
+    background: #228B22;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Reusable content box for centered text sections */
+.content-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Gallery layout for displaying multiple animal cards */
+.animal-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual animal card styling */
+.animal-card {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Animal card title link styles and hover effect */
+.animal-card h2 a {
+    color: #35ab49;
+    text-decoration: none;
+}
+
+.animal-card h2 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
